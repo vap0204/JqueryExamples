@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous">
+</script>
+<style>
+    #panel,#topbar{
+        padding: 5px;
+        text-align: center;
+        background-color: pink;
+        border: solid 1px black;
+    }
+    #panel{
+        padding: 80px;
+        display: none;
+    }
+</style>
+</head>
+<body>
+    <div id="topbar">View Panel</div>
+    <div id="panel">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quibusdam provident quae beatae, repudiandae inventore deserunt minus quo, voluptatibus sed placeat sit modi nobis excepturi ut, est reiciendis cupiditate numquam!
+        </p>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $("#topbar").click(function(){
+                $("#panel").slideDown(1000);
+            })
+        })
+        /*
+        SLUDEUP()
+
+          $(document).ready(function(){
+            $("#topbar").click(function(){
+                $("#panel").slideUp(1000);
+            })
+        })
+
+        SLIDETOGGLE()
+          $(document).ready(function(){
+            $("#topbar").click(function(){
+                $("#panel").slideToggle(1000);
+            })
+        })
+        */
+    </script>
+</body>
+</html>

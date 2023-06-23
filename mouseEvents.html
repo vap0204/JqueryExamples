@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <p id="par">This is paragraph 1</p>
+    <p id="par1">This is paragraph 2</p>
+    <p id="par2">This is paragraph 3</p>
+    <p id="par3">This is paragraph 4</p>
+    
+    <script>
+        //mouseenter()
+        $(document).ready(function(){
+            $("#par").mouseenter(function(){
+                alert("Your mouse Entered Paragraph 1");
+            });
+        });
+
+        //mouseout()
+        $(document).ready(function(){
+            $("#par1").mouseout(function(){
+                alert("Your Mouse Left the Paragrahph 2");
+            });
+        });
+
+        //mousedown()
+        $(document).ready(function(){
+            $("par2").mousedown(function(){
+                alert("Your mouse id doown from Paragraph 3")
+            });
+        });
+        //mouseup()
+        $(document).ready(function(){
+            $("par3").mouseup(function(){
+                alert("Your mouse id up from Paragraph 3")
+            });
+        });
+    </script>
+</body>
+</html>

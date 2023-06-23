@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous">
+</script>
+<style>
+    #square {
+        background-color: blue;
+        height: 160px;
+        width: 160px;
+        margin-top: 5px;
+        position: absolute;
+    }
+</style>
+</head>
+<body>
+    <button>Start Animation</button>
+    <div id="square"></div>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#square").animate({left:'800px'},1000);
+            });
+        });
+
+        /*multiple animation
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#square").animate({left:'800px',opacity:0.25, height:"toggle"},1000);
+            });
+        });
+        */
+
+             /*relative animation
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#square").animate({left:'800px',opacity:0.25, height:+=200ox; width:+=200px},1000);
+            });
+        });
+        */
+    </script>
+</body>
+</html>

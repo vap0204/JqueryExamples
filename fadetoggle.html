@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <style>
+            .box{
+                width: 160px;
+                height: 160px;
+                display: none;
+                background-color:cyan ;
+                margin: 10px;
+            }
+           
+        </style>
+</head>
+<body>
+    <button >Fade Effect</button>
+    <div id="div1" class="box"></div>
+    <div id="div2" class="box"></div>
+    <div id="div3" class="box"></div>
+    <div id="div4" class="box"></div>
+    
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#div1").fadeToggle(5000);
+                $("#div2").fadeToggle(3000);
+                $("#div3").fadeToggle(1000);
+                $("#div4").fadeToggle();
+            })
+        })
+    </script>
+</body>
+</html>

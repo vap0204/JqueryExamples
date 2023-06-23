@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <p id="text1">New text Line</p>
+    <p id="text2">
+        <b>Bold Text</b>
+    </p>
+    <p>Name</p>
+    <input type="text" value="John Smith" id="name">
+    
+    <button id="button1">Reset Text</button>
+    <button id="button2">Reset HTML</button>
+    <button id="button3">Reset Value</button>
+    <script>
+        $(document).ready(function(){
+           $("#button1").click(function(){
+            $("#text1").text("New Text");
+           })
+           $("#button2").click(function(){
+               $("#text2").html("<i>Italic Text</i>");
+           })
+           $("#button3").click(function(){
+                $("#name").val("Jane Wills");
+           });
+
+           
+        });
+    </script>
+</body>
+</html>

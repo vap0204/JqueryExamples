@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiding text</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+        <h1 id="head">This is Heading</h1>
+        <p class="txt">This is paragraph</p>
+        <p>This is paragraph</p>
+        <button>Hide</button>
+    </div>
+
+    <script>
+        //by element
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("p").hide();
+            });
+        });
+
+
+        //by id
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#head").hide();
+            });
+        });
+        //by class
+        $(document).ready(function () {
+            $("button").click(function () {
+                $(".txt").hide();
+            });
+        });
+
+        //$("*")-> select all elements
+        //$(this)-> select current HTML ELEMENT
+        //$(".button")->Select all Button Elements
+        //$("p.demo")->Select all <p> elements wirh class="demo"
+        //$("ul li:first")-> Selects the first <li> element of the first <ul>
+        //$("ul li:first-child")-> Selects the first <li> element of every <ul>
+        //$("[href]")->Selects all elements with an href attribute 
+        //$("a[target='_blank']")-> Selects <a> elements with a target attribute value equal to "_blank"
+        //$(a[target!='_blank'])->Selects <a> elements with a target attribute value NOT equal to "_blank"
+        //$("tr:even")-> Selects all even <tr> elements
+        //$("tr:odd")->Selects all odd <tr> elements
+
+    </script>
+
+
+
+</body>
+
+</html>

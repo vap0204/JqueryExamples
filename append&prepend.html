@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p>This is paragraph</p>
+
+    <ol>
+        <li>Basketball</li>
+        <li>Football</li>
+        <li>Volleyball</li>
+    </ol>
+
+    <button id="button1">Append Text</button>
+    <button id="button2">Append List item</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#button1").click(function(){
+                $("p").append("<b> More Text</b>")
+            });
+            $("#button2").click(function(){
+                $("ol").prepend("<li>New Sport</li>")
+            })
+        })
+    </script>
+</body>
+</html>
